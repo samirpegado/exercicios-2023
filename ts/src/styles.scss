@@ -1,1 +1,42 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn-show-more {
+    @apply text-orange-500 font-semibold
+}
+.btn-create-topic {
+    @apply block
+}
+
+.answered-topic {
+    @apply px-4 py-1
+} 
+
+.ops-topic-subject {
+    @apply text-orange-500 font-medium
+}
+
+.comments-container {
+    @apply block
+}
+
+/* CSS personalizado para ocultar a scrollbar vertical */
+.no-scrollbar {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer / Edge */
+  
+    /* Webkit (Chrome, Safari) */
+    &::-webkit-scrollbar {
+      width: 0.5rem; /* Ajuste a largura conforme necessário */
+    }
+  
+    &::-webkit-scrollbar-thumb {
+      background-color: transparent;
+    }
+  
+    &::-webkit-scrollbar-track {
+      background-color: transparent;
+    }
+  }

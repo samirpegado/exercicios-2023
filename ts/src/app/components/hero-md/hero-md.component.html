@@ -1,0 +1,17 @@
+<div>
+    <div class="border-[1px] border-gray-500 border-opacity-25">
+        <div class="border-b-[1px] border-gray-500 border-opacity-25 bg-[#fdf1eb] ">
+            <p class="px-4 text-xl font-medium text-gray-600 py-2">Resumo</p>
+        </div>
+        <div class="font-thin text-[15px] tracking-wide p-4">
+            <div class="">
+                <p class=""> {{initialText}} <button class="btn-show-more" (click)="toggleExpansion()">{{ expanded ? "": "ver mais"}}</button></p>
+                <div class="duration-600" *ngIf="expanded">
+                    <p class="py-8"> {{ expandedText1 }} </p>
+                    <p class="pb-8"> {{ expandedText2 }} </p>
+                    <p> {{ expandedText3 }} <button class="btn-show-more" (click)="toggleExpansion()">ver menos</button></p>                    
+                </div>        
+            </div>
+        </div>
+    </div>
+</div>

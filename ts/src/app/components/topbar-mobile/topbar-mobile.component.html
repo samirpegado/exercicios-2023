@@ -1,0 +1,53 @@
+<div class="w-full p-3  bg-gradient-to-b from-yellow-600 via-orange-400 to-orange-500 flex items-center justify-between shadow-gray-300 shadow-md z-50 fixed">
+    <button class="bg-slate-50 w-fit rounded-full" (click)="toggleMenu()">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 text-orange-500 " viewBox="0 0 512 512"><path fill="none" stroke="rgb(249 115 22)" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M80 160h352M80 256h352M80 352h352"/></svg>    
+    </button>
+    <div>
+        <p class="text-2xl font-medium text-white">SLACA 2019</p>
+    </div>
+    <div class="flex items-center justify-end">
+        <div class="h-8 w-8">
+            <img src="../assets/perfil.png" class="h-8 w-8 rounded-full z-0 cursor-pointer" >
+        </div>
+        <div class="h-3 w-3 rounded-full bg-red-500 flex items-center justify-center -translate-x-2 -translate-y-2">
+            <p class="text-white text-xs font-semibold cursor-pointer"> 5 </p>
+        </div>            
+    </div>
+</div>
+<ul [ngClass]="{'fixed top-0 z-50 bg-white mt-14 w-3/5 h-fit shadow-2xl md:hidden flex flex-col gap-4 text-medium duration-200': isOpen, 'right-[-100%]': !isOpen}">
+    
+        <ul [ngClass]="{'block text-sm': isOpen, 'hidden' : !isOpen}">
+          <li class="flex border-b-[1px] border-gray-500 border-opacity-25 hover:bg-[#fdf1eb]">
+              <a href="#" class="  inline-block border-l-4 w-full py-[5px] border-transparent hover:text-gray-600 hover:border-orange-500">
+                <p class="hover:translate-x-2 hover:transition px-6 text-amber-950">Apresentação</p>
+              </a>              
+          </li>
+          <li class="flex border-b-[1px] border-gray-500 border-opacity-25 hover:bg-[#fdf1eb]">
+            <a href="#" class="  inline-block border-l-4 w-full py-[5px] border-transparent hover:text-gray-600 hover:border-orange-500">
+              <p class="hover:translate-x-2 hover:transition px-6 text-amber-950">Comitês</p>
+            </a>              
+          </li>
+          <li class="flex border-b-[1px] border-gray-500 border-opacity-25 hover:bg-[#fdf1eb]">
+            <a href="#" class="  inline-block border-l-4 w-full py-[5px] border-transparent hover:text-gray-600 hover:border-orange-500">
+              <p class="hover:translate-x-2 hover:transition px-6 text-amber-950">Autores</p>
+            </a>              
+          </li>
+          <li class="flex border-b-[1px] border-gray-500 border-opacity-25 hover:bg-[#fdf1eb]">
+            <a href="#" class="  inline-block border-l-4 w-full py-[5px] border-transparent hover:text-gray-600 hover:border-orange-500">
+              <p class="hover:translate-x-2 hover:transition px-6 text-amber-950">Eixos temáticos</p>
+            </a>              
+          </li>
+          <li class="flex border-b-[1px] border-gray-500 border-opacity-25 hover:bg-[#fdf1eb]">
+            <a href="#" class="  inline-block border-l-4 w-full py-[5px] border-transparent hover:text-gray-600 hover:border-orange-500">
+              <p class="hover:translate-x-2 hover:transition px-6 text-amber-950">Trabalhos</p>
+            </a>              
+          </li>
+          <li class="flex border-b-[1px] border-gray-500 border-opacity-25 hover:bg-[#fdf1eb]">
+            <a href="#" class="  inline-block border-l-4 w-full py-[5px] border-transparent hover:text-gray-600 hover:border-orange-500">
+              <p class="hover:translate-x-2 hover:transition px-6 text-amber-950">Contato</p>
+            </a>              
+          </li>   
+        </ul>      
+</ul>
+
+  

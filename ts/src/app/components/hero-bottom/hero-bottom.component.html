@@ -1,0 +1,11 @@
+<div>
+    <div class="border-[1px] border-gray-500 border-opacity-25 pb-4">
+        <div class="border-b-[1px] border-gray-500 border-opacity-25 bg-[#fdf1eb] ">
+            <p class="px-4 text-xl font-medium text-gray-600 py-2">Discussões</p>
+        </div>        
+            <app-criar-topico *ngIf="mostrarCriar"></app-criar-topico>
+            <app-form-topico *ngIf="mostrarForm"></app-form-topico>
+            <app-enviar-topico *ngIf="mostrarEnviar"></app-enviar-topico>
+            <app-bottom-posts></app-bottom-posts>   
+    </div>
+</div>
